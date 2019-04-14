@@ -1,2 +1,3 @@
 # Practice-Python
-A set of tasks for practicing my Python skill
+A set of exercizes for practicing my Python skill
+https://www.practicepython.org
