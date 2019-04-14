@@ -1,0 +1,4 @@
+var VKs = ['mouse','roccat','logitech','steelseries','corsair','razer','mad catz','keyboard'];
+var VVFCs = ["e5f40d716ad7944f0b8e226f6e9d9a74"];
+var SAs = [];
+var VCs = ['pers.front'];
