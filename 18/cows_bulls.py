@@ -18,7 +18,7 @@ def cow_bull(number, guess):
 		if number[i] == guess[i]:
 			COW = COW + 1
 		else:
-			for j in range(len(number)):
+			for j in range(len(number)): #This is not how to Python, should use: guess[i] in number
 				if guess[j] == number[i]:
 					BULL = BULL + 1
 	print("You currently have " + str(COW) + " cows and "+ str(BULL)+" bulls")
