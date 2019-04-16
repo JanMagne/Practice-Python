@@ -11,8 +11,8 @@ url = "https://www.theregister.co.uk/2014/08/26/top_ten_gaming_keyboard_and_mous
 page_string = "?page="
 
 
-def printpage(page):
-	pagesoup = BeautifulSoup(requests.get(page).text, "html.parser")
+def printpage(url):
+	pagesoup = BeautifulSoup(requests.get(url).text, "html.parser")
 	for body in pagesoup.find_all("p"):
 		print(body.text)
 
