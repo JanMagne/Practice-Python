@@ -32,7 +32,6 @@ def printGameBoard(game):
 
 
 if __name__	== "__main__":
-	#gameBoard(int(input("Enter the size of board you want: ")))
 	printGameBoard([[1,1,1],
 		   			[0,0,1],
 		    		[0,2,0]])

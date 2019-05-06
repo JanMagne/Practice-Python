@@ -44,14 +44,14 @@ def checkDiag(game):
 		return 0
 	if game [0][0] == game[1][1] == game[2][2]:
 		if game[0][0] == 1:
-			return("player_one")	#Give the number of the player that wins
+			return("player one")	#Give the number of the player that wins
 		else:
-			return("player_two")
+			return("player two")
 	if game [0][2] == game[1][1] == game[2][0]:
 		if game[1][1] == 1:
-			return("player_one")	#Give the number of the player that wins
+			return("player one")	#Give the number of the player that wins
 		else:
-			return("player_two")
+			return("player two")
 
 
 
@@ -69,8 +69,7 @@ def checkForWinner(game):
 		return winner
 	
 	# If we got to here without one of the other if-statements being true, it means there was no winner
-	return("There was no winner")
-
+	return False
 
 
 	
