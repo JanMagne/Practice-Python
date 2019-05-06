@@ -26,7 +26,7 @@ def main():
 	whosTurn = 1
 	
 	while 1:
-		game = usrInp(game, whosTurn)
+		game = usrinp(game, whosTurn)
 		printGameBoard(game)
 
 		if checkForWinner(game):

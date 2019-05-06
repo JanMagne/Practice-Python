@@ -40,7 +40,7 @@ def playerInput(inputstring):
 	coordinates['y'] = userinlst[1].strip()
 	return coordinates
 
-def usrinp(game):
+def usrinp(game, playerID):
 	playing = True
 	print("You are gonne be asked to input the coordinates for your square")
 	print("Please enter them as coordinates like (x,y) from 1 to 3")

@@ -13,21 +13,26 @@ Draw a game board, like for chess or tic-tac-toe. Ask the user what size he want
 
 
 
-def printGameBoard(scale):
+def printGameBoard(game):
 
-	ver = "|   "*(scale + 1)
-	hor = " ---"*scale
 
-	for i in range(scale*2):
-		if i % 2 == 0:
-			print(hor)
-		else:
-			print(ver)
-
+	hor = " --- --- ---"
+	for row in game:
+		print(hor)
+		for sq in row:
+			if sq == 0:
+				print("|   ", end="")
+			elif sq == 1:
+				print("| x ", end="")
+			elif sq == 2:
+				print("| o ", end="")
+		print("|")
 	print(hor)
 
 
 
 if __name__	== "__main__":
 	#gameBoard(int(input("Enter the size of board you want: ")))
-	printGameBoard(3)
+	printGameBoard([[1,1,1],
+		   			[0,0,1],
+		    		[0,2,0]])
